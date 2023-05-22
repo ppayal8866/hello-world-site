@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Change Images Every Second</title>
+    <link rel="stylesheet" type="text/css" href="../hello-world-site/css/changeImage.css">
+    <link rel="stylesheet" type="text/css" href="../hello-world-site/css/font.css">
+
+</head>
+<body>
+<h1>Show Image</h1>
+<img src="" id="image">
+
+<script type="text/javascript">
+    let image = document.getElementById('image')
+    let images = ["file:///Users/payal/Desktop/AWS/hello-world-site/images/image1.jpg",
+                "file:///Users/payal/Desktop/AWS/hello-world-site/images/image2.jpg",
+                "file:///Users/payal/Desktop/AWS/hello-world-site/images/image3.jpg",
+                "file:///Users/payal/Desktop/AWS/hello-world-site/images/image4.jpg",
+                "file:///Users/payal/Desktop/AWS/hello-world-site/images/image5.jpg",
+                "file:///Users/payal/Desktop/AWS/hello-world-site/images/image6.jpg",
+                "file:///Users/payal/Desktop/AWS/hello-world-site/images/image7.jpg",
+                "file:///Users/payal/Desktop/AWS/hello-world-site/images/image8.jpeg"]
+
+setInterval(function(){
+        let random = Math.floor(Math.random()*8)
+        image.src = images[random];
+    }, 300);
+</script>
+
+</body>
+</html>
