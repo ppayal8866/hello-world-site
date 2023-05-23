@@ -1,31 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <title>Change Images Every Second</title>
-    <link rel="stylesheet" type="text/css" href="../hello-world-site/css/changeImage.css">
-    <link rel="stylesheet" type="text/css" href="../hello-world-site/css/font.css">
-
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <title>auto image slider</title>
 </head>
+
 <body>
-<h1>Show Image</h1>
-<img src="" id="image">
-
-<script type="text/javascript">
-    let image = document.getElementById('image')
-    let images = ["file:///Users/payal/Desktop/AWS/hello-world-site/images/image1.jpg",
-                "file:///Users/payal/Desktop/AWS/hello-world-site/images/image2.jpg",
-                "file:///Users/payal/Desktop/AWS/hello-world-site/images/image3.jpg",
-                "file:///Users/payal/Desktop/AWS/hello-world-site/images/image4.jpg",
-                "file:///Users/payal/Desktop/AWS/hello-world-site/images/image5.jpg",
-                "file:///Users/payal/Desktop/AWS/hello-world-site/images/image6.jpg",
-                "file:///Users/payal/Desktop/AWS/hello-world-site/images/image7.jpg",
-                "file:///Users/payal/Desktop/AWS/hello-world-site/images/image8.jpeg"]
-
-setInterval(function(){
-        let random = Math.floor(Math.random()*8)
-        image.src = images[random];
-    }, 300);
-</script>
-
+    <h1>Image Slider</h1>
+    <div class="slider-frame">
+        <div class="slide-images">
+            <div class="img-container">
+                <img src="image1.jpg">
+            </div>
+            <div class="img-container">
+                <img src="image2.jpg">
+            </div>
+            <div class="img-container">
+                <img src="image7.jpg">
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

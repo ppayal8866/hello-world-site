@@ -1,48 +1,42 @@
 <!DOCTYPE html lang="en">
 <html>
-<head>
-    <title>Daily Photos</title>
-    <br>
-    <br>
-    <link rel="stylesheet" type="text/css" href="../hello-world-site/css/changeImage.css">
-    <link rel="stylesheet" type="text/css" href="../hello-world-site/css/font.css">
+    <head>
+        <title>Daily Photos</title>
+        <link rel="stylesheet" type="text/css" href="changeImage.css">
+    </head>
     <body>
-
-        <div id="main">
-            <img id="yourImageId" src=""/>
+        <h1>Display Image</h1>
         <script type="text/javascript">
-            let dailyPhotos;
-            let today, img;
+            var imlocation = "images/";
+            function ImageArray (n) 
+            {
+                this.length = n;
+                for (var i =1; i <= n; i++) {
+                    this[i] = ' '
+                }
+            }
+            function linkArray (n) 
+            {
+                this.length = n;
+                for (var i =1; i <= n; i++) {
+                  this[i] = ' '
+                }
+            }
+            image = new ImageArray(7);
+            image[0] = 'image1.jpg';
+            image[1] = 'image2.jpg';
+            image[2] = 'image3.jpg';
+            image[3] = 'image4.jpg';
+            image[4] = 'image5.jpg';
+            image[5] = 'image6.jpg';
+            image[6] = 'image7.jpg';
 
-            dailyPhotos = function() {
-
-                today = new Date();
-                weekday = today.getDay();
-                showImages = [ ];
-
-                myPhotos = ["file:///Users/payal/Desktop/AWS/hello-world-site/images/image1.jpg",
-                            "file:///Users/payal/Desktop/AWS/hello-world-site/images/image2.jpg",
-                            "file:///Users/payal/Desktop/AWS/hello-world-site/images/image3.jpg",
-                            "file:///Users/payal/Desktop/AWS/hello-world-site/images/image4.jpg",
-                            "file:///Users/payal/Desktop/AWS/hello-world-site/images/image5.jpg",
-                            "file:///Users/payal/Desktop/AWS/hello-world-site/images/image6.jpg",
-                            "file:///Users/payal/Desktop/AWS/hello-world-site/images/image7.jpg",
-                            "file:///Users/payal/Desktop/AWS/hello-world-site/images/image8.jpeg"]; 
-
-                if ( document.images ) {
-                    for ( let x = 0; x < myPhotos.length; x++ ) { 
-                    showImages[ x ] = new Image();
-                    showImages[ x ].src = myPhotos[ x ];          
-                    } img = (( document.getElementById ) ? document.getElementById("yourImageId") : document.images.yourImageId ); // Specify the id of the image that will get raplaced daily.
-                    img.src = showImages[ weekday ].src;
-                    img.alt = myPhotos[ weekday ];         
-                } return false; // If the browser can't display images, then EXIT FUNCTION.
-            };
-                window.onload = dailyPhotos;
+            var currentdate = new Date();
+            var imagenumber = currentdate.getDay();
+            document.write('<img src="' + imlocation + image[imagenumber] + '">');
 
         </script>
-    </head>
-</div>
-</body>
+
+    </body>
 </html>
 
