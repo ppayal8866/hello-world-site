@@ -4,6 +4,11 @@
 
 [Sign In](https://main.d3j1ztgpodbxri.amplifyapp.com/signin.html)
 
+[changeImagesEveryDay](file:///Users/payal/Desktop/AWS/hello-world-site/changeImagesEveryDay.html)
+
+
+[changeImagesEverSecond](file:///Users/payal/Desktop/AWS/hello-world-site/changeImagesEverSecond.html)
+
 ## Technology Stack
 - AWS IAM
 - AWS Cognito
@@ -15,6 +20,4 @@
 - AWS SES(Simple Email Service)
 - AWS Amplify (CI/CD)
 
-## todo
-1. Add Sign In button on home page
-2. Change Giddy Up button to Register
+
