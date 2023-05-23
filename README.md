@@ -4,10 +4,10 @@
 
 [Sign In](https://main.d3j1ztgpodbxri.amplifyapp.com/signin.html)
 
-[Display Image every Day](file:///Users/payal/Desktop/AWS/hello-world-site/changeImagesEveryDay.html)
+[changeImagesEveryDay](file:///Users/payal/Desktop/AWS/hello-world-site/changeImagesEveryDay.html)
 
 
-[Change Image Every Second In](file:///Users/payal/Desktop/AWS/hello-world-site/changeImagesEverSecond.html)
+[changeImagesEverSecond](file:///Users/payal/Desktop/AWS/hello-world-site/changeImagesEverSecond.html)
 
 ## Technology Stack
 - AWS IAM
