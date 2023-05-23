@@ -4,10 +4,9 @@
 
 [Sign In](https://main.d3j1ztgpodbxri.amplifyapp.com/signin.html)
 
-[changeImagesEveryDay](file:///Users/payal/Desktop/AWS/hello-world-site/changeImagesEveryDay.html)
+[change Images](https://main.d3j1ztgpodbxri.amplifyapp.com/changeImagesEveryDay.html)
 
-
-[changeImagesEverSecond](file:///Users/payal/Desktop/AWS/hello-world-site/changeImagesEverSecond.html)
+[Image Slider](https://main.d3j1ztgpodbxri.amplifyapp.com/imageSlider.html)
 
 ## Technology Stack
 - AWS IAM
